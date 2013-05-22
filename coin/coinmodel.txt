@@ -1,10 +1,8 @@
 model {
-
- 
   p ~ dunif( 0, 1 )
   for( i in 1 : n)  {
     h[i] ~ dbern( p )
   }
   hh <-  p * p
- 
+  tt <- (1-p) * (1-p)
 }
