@@ -27,8 +27,6 @@ reportResults <- function(var, name, monitor) {
                                             probs = c( 0.025, 0.975 ) ) ))
 }
 
-setwd("~/Documents/workspace/ExperimentsInBayesianLearningInR/coin")
-
 modelstring="
 model {
   p ~ dunif( 0, 1 )
