@@ -27,6 +27,7 @@ reportResults <- function(var, name, monitor) {
                                             probs = c( 0.025, 0.975 ) ) ))
 }
 
+# using defenti theorm the sampling dist must be draw from bernoli.  FOr proior we are just using a diffused uniform prior over all possibilities.
 modelstring="
 model {
   p ~ dunif( 0, 1 )
